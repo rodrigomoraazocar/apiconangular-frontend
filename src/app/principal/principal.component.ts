@@ -12,4 +12,9 @@ export class PrincipalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+//Variable para visibilidad de los botones
+
+btnCadastro:boolean= true;
+
+
 }

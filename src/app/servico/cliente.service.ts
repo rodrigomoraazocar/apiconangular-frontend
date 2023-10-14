@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class ClienteService {
 
-  constructor() { }
+  //Url de la Api
+
+  private url:string='https://apiconangular-production.up.railway.app'
+
+
+  // Constructor
+  constructor(private http:HttpClient) { }
 }

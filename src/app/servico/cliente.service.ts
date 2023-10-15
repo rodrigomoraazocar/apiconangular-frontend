@@ -10,7 +10,7 @@ export class ClienteService {
 
   //Url de la Api
 
-   private url:string='https://apiconangular-production.up.railway.app';
+   private url:string='http://localhost:8080';
 
 
   // Constructor

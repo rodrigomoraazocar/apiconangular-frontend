@@ -13,6 +13,12 @@ export class PrincipalComponent implements OnInit {
 
   //ngOnInit(): void { }
 
+  //Objeto do tipo Cliente
+
+  cliente = new Cliente();
+
+
+
 //Variable para visibilidad de los botones
 
 btnCadastro:boolean= true;

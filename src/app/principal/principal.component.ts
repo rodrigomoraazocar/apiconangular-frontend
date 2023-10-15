@@ -23,6 +23,11 @@ export class PrincipalComponent implements OnInit {
 
 btnCadastro:boolean= true;
 
+//Variable para visibilidad de la tabla
+tabela:boolean=true;
+
+
+
 //JSON de Clientes
 
 clientes:Cliente[]= [];
@@ -55,6 +60,21 @@ cadastrar():void{
   
   });
   }
+
+//Metodo para seleccionar un cliente especifico
+selecionarCliente(posicao:number):void{
+
+//seleccionar cliente en el vector
+this.cliente=this.clientes[posicao];
+
+//visibilidad de los botones
+this.btnCadastro=false;
+
+//Visibilidad de la tabla
+this.tabela=false;
+
+}
+
 
 //Metodo de inicializacion
 ngOnInit(){

@@ -16,7 +16,7 @@
 
 
 
-<table class="table">
+<table class="table" *ngIf="tabela">
 
     <thead>
         <tr>
@@ -34,7 +34,7 @@
             <td>{{c.nome}}</td>
             <td>{{c.idade}}</td>
             <td>{{c.cidade}}</td>
-            <td><button class="btn btn-success">Selecionar</button></td>
+            <td><button class="btn btn-success" (click)="selecionarCliente(i)">Selecionar</button></td>
             <td></td>
         </tr>
     </tbody>

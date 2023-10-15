@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Cliente } from '../modelo/Cliente';
+import { ClienteService } from '../servico/cliente.service';
 
 @Component({
   selector: 'app-principal',
@@ -7,14 +9,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor() { }
+ // constructor() { }
 
-  ngOnInit(): void {
-  }
+  //ngOnInit(): void { }
 
 //Variable para visibilidad de los botones
 
 btnCadastro:boolean= true;
 
+//JSON de Clientes
+
+clientes:Cliente[]= [];
+
+//Constructor
+constructor (private servico:ClienteService){}
+
+
+//Método de seleção
+selecionar():void{
+this.servico.seleccionar()
+.subscribe(retorno=> this.clientes=retorno);
+}
+
+//Metodo de inicializacion
+ngOnInit(){
+this.selecionar();
+}
 
 }

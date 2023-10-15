@@ -37,6 +37,25 @@ this.servico.seleccionar()
 .subscribe(retorno=> this.clientes=retorno);
 }
 
+//Metodo de cadastro
+
+cadastrar():void{
+  this.servico.cadastrar(this.cliente)
+  .subscribe(retorno => {
+    
+    // Registrar el cliente en el vector
+    this.clientes.push(retorno);
+
+ //Limpiar formulario
+ this.cliente = new Cliente();
+
+ //Mensaje
+ alert ('Cliente cadastrado com sucesso!');
+
+  
+  });
+  }
+
 //Metodo de inicializacion
 ngOnInit(){
 this.selecionar();

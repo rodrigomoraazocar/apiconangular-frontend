@@ -75,6 +75,36 @@ this.tabela=false;
 
 }
 
+//Metodo para editar clientes
+
+editar():void{
+  this.servico.editar(this.cliente)
+  .subscribe(retorno=> {
+
+    //Obtener posición del vector done está el cliente
+    let posicao = this.clientes.findIndex(obj =>{
+      return obj.codigo ==retorno.codigo;
+    });
+
+    //Alterar los datos del cliente en el vector
+      this.clientes[posicao] =retorno;
+
+      //Limpiar formulario
+      this.cliente= new Cliente();
+
+    //Visibilidad de los botones
+    this.btnCadastro =true;
+
+    //Visibilidad de la tabla
+    this.tabela = true;
+
+    //Mensaje
+    alert('Cliente alterado com sucesso!');
+
+
+
+  });
+}
 
 //Metodo de inicializacion
 ngOnInit(){

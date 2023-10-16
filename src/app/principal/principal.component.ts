@@ -137,6 +137,23 @@ remover():void{
   });
 }
 
+//Metodo para cancelar
+cancelar():void{
+
+
+   //Limpiar formulario
+   this.cliente= new Cliente();
+
+   //Visibilidad de los botones
+   this.btnCadastro =true;
+
+   //Visibilidad de la tabla
+   this.tabela = true;
+
+}
+
+
+
 //Metodo de inicializacion
 ngOnInit(){
 this.selecionar();

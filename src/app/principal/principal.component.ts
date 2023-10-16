@@ -106,6 +106,37 @@ editar():void{
   });
 }
 
+//Metodo para remover clientes
+
+remover():void{
+  this.servico.remover(this.cliente.codigo)
+  .subscribe(retorno=> {
+
+    //Obtener posición del vector donde está el cliente
+    let posicao = this.clientes.findIndex(obj =>{
+      return obj.codigo ==this.cliente.codigo;
+    });
+
+    //Remover cliente del vector
+      this.clientes.splice(posicao,1);
+
+      //Limpiar formulario
+      this.cliente= new Cliente();
+
+    //Visibilidad de los botones
+    this.btnCadastro =true;
+
+    //Visibilidad de la tabla
+    this.tabela = true;
+
+    //Mensaje
+    alert('Cliente removido com sucesso!');
+
+
+
+  });
+}
+
 //Metodo de inicializacion
 ngOnInit(){
 this.selecionar();

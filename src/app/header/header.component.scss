@@ -1,0 +1,27 @@
+/* Esto se asegura de que el header abarque todo el ancho de la pantalla */
+:host {
+  display: block;
+  background-color: #00FFFF; /* Color celeste */
+  width: 100%;
+}
+
+.header-container {
+  display: flex; /* Establece flexbox */
+  justify-content: space-between; /* Separa el título y el enlace a los extremos */
+  align-items: center; /* Alinea verticalmente al centro */
+  width: 100%; /* Aseguramos que tome todo el ancho */
+  padding: 10px; /* Un poco de relleno para que se vea mejor */
+}
+
+.title {
+  font-weight: bold; /* Estilo en negrita para el título */
+  font-size: 1.2em; /* Tamaño de fuente más grande para el título */
+}
+
+.title-link {
+  text-decoration: none; // Para quitar el subrayado del enlace
+  color: inherit; // Para que el color del enlace sea el mismo que el del texto circundante
+  &:hover {
+      text-decoration: underline; // Para subrayar el enlace cuando pases el ratón por encima
+  }
+}

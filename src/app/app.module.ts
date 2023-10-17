@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { ReadmePageComponent } from './readme-page/readme-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,        
-    PrincipalComponent
+    PrincipalComponent, HeaderComponent, ReadmePageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,27 +1,23 @@
 # FrontendAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 13.2.6.
 
-## Development server
+## Servidor de desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Execute `ng serve` para um servidor de desenvolvimento. Navegue para `http://localhost:4200/`. O aplicativo recarregará automaticamente se você alterar qualquer um dos arquivos originais.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Información Adicional sobre o Proyecto
 
-## Build
+## Backend
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Tecnología**: Java Spring Boot
+- **Versão**: Spring Boot (v3.0)
+- **Banco de dados**: PostgreSQL versão 15
+- **GitHub do Backend**: [https://github.com/rodrigomoraazocar/apiconangular](https://github.com/rodrigomoraazocar/apiconangular)
 
-## Running unit tests
+## Frontend
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Tecnología**: Angular
+- **GitHub do Frontend**: [https://github.com/rodrigomoraazocar/apiconangular-frontend](https://github.com/rodrigomoraazocar/apiconangular-frontend)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -7,7 +7,7 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 Execute `ng serve` para um servidor de desenvolvimento. Navegue para `http://localhost:4200/`. O aplicativo recarregará automaticamente se você alterar qualquer um dos arquivos originais.
 
 
-# Información Adicional sobre o Proyecto
+# Informação Adicional sobre o Proyecto
 
 ## Backend
 
